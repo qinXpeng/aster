@@ -49,6 +49,13 @@ body {
     font-size: 16px;
     flex: 1;
     outline: none;
+    caret-color: #859900;  /* 绿色光标 */
+}
+
+/* 使用伪元素创建自定义光标 */
+#terminal-input::selection {
+    background-color: #859900;  /* 选中文本的背景色 */
+    color: #002b36;            /* 选中文本的前景色 */
 }
 
 .output-lines {

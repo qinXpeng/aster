@@ -90,8 +90,12 @@ document.addEventListener('DOMContentLoaded', () => {
             commandLine.innerHTML = `<span class="prompt"><span class="prompt-path">${root_path}</span> <span class="prompt-time">${time}</span> ❯ </span>${command}`;
             outputLines.appendChild(commandLine);
 
-            // 只在有输入内容时显示随机消息
-            if (command) {
+            // 处理 clear 命令
+            if (command.toLowerCase() === 'clear') {
+                // 清空输出区域
+                outputLines.innerHTML = '';
+            } else if (command) {
+                // 其他命令的处理保持不变
                 const randomMessage = funnyMessages[Math.floor(Math.random() * funnyMessages.length)];
                 const messageLine = document.createElement('div');
                 messageLine.style.color = '#2aa198';
