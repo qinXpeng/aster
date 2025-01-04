@@ -1,0 +1,56 @@
+body {
+    background-color: #002b36;  /* Solarized dark background */
+    margin: 0;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.terminal {
+    background-color: #073642;  /* Solarized dark secondary */
+    color: #839496;  /* Solarized base0 */
+    padding: 20px;
+    border-radius: 5px;
+    height: 90vh;
+    overflow-y: auto;
+}
+
+.terminal-header {
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    white-space: pre-line;
+    color: #2aa198;  /* Solarized cyan */
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    color: #859900;  /* Solarized green */
+    margin-right: 10px;
+}
+
+.prompt-path {
+    color: #3465A4;
+}
+
+.prompt-time {
+    color: #75507B;
+}
+
+#terminal-input {
+    background: transparent;
+    border: none;
+    color: #839496;  /* Solarized base0 */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    flex: 1;
+    outline: none;
+}
+
+.output-lines {
+    margin-bottom: 10px;
+}
